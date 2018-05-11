@@ -1,0 +1,136 @@
+body{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    height: 100vh;
+    width: 100vw;
+    margin: 0; 
+}
+
+@media screen and (orientation: portrait) {
+    body {
+        display: block; 
+        }
+}
+
+.header {
+    grid-row: 1;
+    grid-column: 1 / 8;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5em;
+    text-align: center;
+    background-color: #4a4a4a;
+    color: white;
+    justify-content: center;
+}
+
+
+.first {
+    grid-row: 2 / 4;
+    grid-column: 2 / 4;
+    background-image: url("images/1.jpg");  
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.first:hover {
+  border-radius: 50%;
+}
+
+.second {
+    grid-row: 2 / 5;
+    grid-column: 4 / 7;
+    background-image: url("images/2.jpg");
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.second:hover {
+  border-radius: 50%;
+}
+
+.third {
+    grid-row: 4 / 6;
+    grid-column: 2 / 4;
+    background-image: url("images/3.jpg");
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;  
+}
+
+.third:hover {
+  border-radius: 50%;
+}
+
+.fourth {
+    grid-row: 5;
+    grid-column: 4;
+    background-image: url("images/4.jpg");
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease; 
+}
+
+.fourth:hover {
+  border-radius: 50%;
+}
+
+.fifth {
+    grid-row: 5 / 8;
+    grid-column: 5 / 7;
+    background-image: url("images/5.jpg");
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;  
+}
+
+.fifth:hover {
+  border-radius: 50%;
+}
+
+.sixth {
+    grid-row: 6 / 8;
+    grid-column: 2 / 5;
+    background-image: url("images/6.jpg");
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;        
+}
+
+.sixth:hover {
+  border-radius: 50%;
+}
+
+div {
+    font-size: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.fourth p {
+    font-size: 24px;
+}
+
+.first p {
+    color: white;
+    font-weight: bold; 
+}
