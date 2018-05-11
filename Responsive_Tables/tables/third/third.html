@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset='UTF-8'>
+	<title>Responsive Table</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="../../../styles/menu.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+			$(document).ready(function(){
+					$("#report tr:odd").addClass("odd");
+					$("#report tr:not(.odd)").hide();
+					$("#report tr:first-child").show();
+
+					$("#report tr.odd").click(function(){
+							$(this).next("tr").toggle();
+							$(this).find(".arrow").toggleClass("up");
+					});
+					//$("#report").jExpand();
+			});
+	</script>
+</head>
+
+<body>
+	<div class="menu">
+		<ul class="topnav">
+			<li><a href="/home/mikolosek/Pulpit/Techniki/my_project/index.html">Strona główna</a></li>
+			<li><a href="/home/mikolosek/Pulpit/Techniki/my_project/first_web/index.html">First Web</a></li>
+			<li><a href="/home/mikolosek/Pulpit/Techniki/my_project/Responsive_Tables/index.html">Tabelki</a></li>
+			<li><a href="/home/mikolosek/Pulpit/Techniki/my_project/kontakt/index.html">Kontakt</a></li>
+		</ul>
+	</div>
+<div class="back">
+<center>
+	<a href="../../index.html"><img src="/home/mikolosek/Pulpit/Techniki/first_web/back.png" alt="WSTECZ" width="50" height="50"/></a>
+</center>
+</div>
+	<div class="table">
+		<table id="report">
+				<tr>
+						<th>Miasto</th>
+						<th>Liczba ludności</th>
+						<th>Powierzchnia</th>
+						<th>Prezydent</th>
+				</tr>
+				<tr>
+						<td>Gdańsk</td>
+						<td>464 254</td>
+						<td>261,96 km²</td>
+						<td>Paweł Adamowicz</td>
+				</tr>
+				<tr>
+						<td colspan="5">
+								<h4>Dodatkowe informacje</h4>
+								<ul>
+										<li><a href="https://pl.wikipedia.org/wiki/Gda%C5%84sk">Gdańk - Wikipedia</a></li>
+										<li><a href="http://gdansk.pl/">Strona miasta Gdańsk</a></li>
+										<li><a href="http://gdansk.naszemiasto.pl/">Lokalne wiadomości</a></li>
+								 </ul>
+						</td>
+				</tr>
+				<td>Gdynia</td>
+				<td>246 306</td>
+				<td>135,14 km²</td>
+				<td>Wojciech Szczurek</td>
+		</tr>
+		<tr>
+				<td colspan="5">
+						<h4>Dodatkowe informacje</h4>
+						<ul>
+							<li><a href="https://pl.wikipedia.org/wiki/Gdynia">Gdynia - Wikipedia</a></li>
+							<li><a href="http://gdynia.pl/">Strona miasta Gdynia</a></li>
+							<li><a href="http://gdynia.naszemiasto.pl/">Lokalne wiadomości</a></li>
+						 </ul>
+
+				</td>
+		</tr>
+				<tr>
+						<td>Sopot</td>
+						<td>37 0890</td>
+						<td>17,28 km²</td>
+						<td>Jan Karnowski</td>
+				</tr>
+				<tr>
+						<td colspan="5">
+									<h4>Dodatkowe informacje</h4>
+									<ul>
+											<li><a href="https://pl.wikipedia.org/wiki/Sopot">Sopot - Wikipedia</a></li>
+											<li><a href="http://gdansk.pl/">Strona miasta Sopot</a></li>
+											<li><a href="http://sopot.naszemiasto.pl/">Lokalne wiadomości</a></li>
+								</ul>
+
+						</td>
+				</tr>
+				<tr>
+
+		</table>
+</div>
+	<div class="stopka">
+	  Techniki internetowe 2018
+	</div>
+</body>
+
+</html>

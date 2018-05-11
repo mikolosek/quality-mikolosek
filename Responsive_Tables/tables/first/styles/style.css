@@ -1,0 +1,112 @@
+body{
+    display: grid;
+    grid-template-rows: repeat(11, 1fr);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-size: 1.5em;
+    background-color: #D6D1CF;
+}
+
+.menu {
+  grid-row: 1;
+}
+
+.table {
+  grid-row: 2 / 11;
+}
+
+.stopka {
+  grid-row: 11;
+  background-color: #333;
+  color: white;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+}
+
+table {
+	font: 20px Georgia, Serif;
+}
+
+
+tr:nth-of-type(odd) {
+		background: #808080;
+}
+
+th {
+		background: #333333;
+		color: white;
+		font-weight: bold;
+}
+
+td, th {
+		padding: 6px;
+		border: 1px solid #ccc;
+		text-align: left;
+}
+
+tr:hover{
+  background-color: #75FF4C;
+}
+
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+	table, thead, tbody, th, td, tr, body {
+		display: block;
+	}
+
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	tr { border: 1px solid #ccc; }
+
+	td {
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+	}
+
+	td:before {
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+	ul.topnav li.right,
+	ul.topnav li {float: none;}
+
+	td:nth-of-type(1):before { content: "Imię"; }
+	td:nth-of-type(2):before { content: "Nazwisko"; }
+	td:nth-of-type(3):before { content: "Data urodzenia"; }
+	td:nth-of-type(4):before { content: "Miejsce urodzenia"; }
+	td:nth-of-type(5):before { content: "Ulica"; }
+	td:nth-of-type(6):before { content: "Numer domu"; }
+	td:nth-of-type(7):before { content: "Miejscowość"; }
+	td:nth-of-type(8):before { content: "Numer telefonu"; }
+	td:nth-of-type(9):before { content: "Email"; }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+	body {
+		padding: 0;
+		margin: 0;
+		width: 320px; }
+	}
+}
